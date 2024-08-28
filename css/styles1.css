@@ -1,0 +1,144 @@
+:root{
+    --color-1: #e3f2fd;
+    --color-2: #e8f5e9;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+}
+
+.menu-hamburger {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.menu-hamburger .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li.has-submenu:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #4CAF50;
+    padding: 10px 0;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.submenu li {
+    margin: 0;
+    padding: 5px 20px;
+}
+
+.submenu li a {
+    color: white;
+}
+
+main {
+    padding: 20px;
+}
+
+main h1 {
+    color: #4CAF50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.topic {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#topic1 {
+    background-color: var(--color-1);
+}
+
+#topic2 {
+    background-color: var(--color-2);
+}
+
+
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@media (max-width: 900px) {
+    main {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        display: none;
+    }
+
+    .menu-hamburger {
+        display: block;
+    }
+
+    nav ul.menu-active {
+        display: flex;
+    }
+
+    footer {
+        position: static;
+        padding: 20px 0;
+    }
+}

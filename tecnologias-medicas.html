@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gadget Guru - Inovações Médicas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            background-color: #333;
+            padding: 10px;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+        }
+        .menu a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .menu .hamburger {
+            display: none;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content h2 {
+            color: #4CAF50;
+        }
+        .content p {
+            margin-bottom: 20px;
+        }
+        @media (max-width: 600px) {
+            .menu a { display: none; }
+            .menu .hamburger {
+                display: block;
+                cursor: pointer;
+            }
+            .menu.active a { display: block; }
+        }
+        .article-section {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .article-section:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+        .article-section:nth-child(even) {
+            background-color: #e9e9e9;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Gadget Guru</h1>
+        <nav>
+            <div class="menu-hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Início</a></li>
+                <li class="has-submenu">
+                    Assistente Virtual
+                    <ul class="submenu">
+                        <li><a href="alexa.html">Alexa</a></li>
+                        <li><a href="google-home.html">Google Home</a></li>
+                        <li><a href="siri.html">Siri</a></li>
+                    </ul>
+                <li><a href="fones-cancelamento.html">Fones de Ouvido</a></li>
+                <li><a href="smartwatch.html">Smartwatch</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="content">
+                <h2>Revolução Digital: Como as Novas Tecnologias Estão Transformando Nossas Vidas!</h2>
+                <div class="article-section">
+                    <h3>1. Inteligência Artificial na Medicina</h3>
+                    <p><strong>O que é?</strong> Sistemas avançados de IA que analisam grandes volumes de dados médicos.</p>
+                    <p><strong>Por que é revolucionário?</strong> A IA pode identificar padrões em exames de imagem, ajudando médicos a diagnosticar doenças como câncer em estágios iniciais com precisão impressionante. Além disso, sistemas de IA como Watson Health da IBM estão auxiliando no desenvolvimento de tratamentos personalizados, analisando dados genômicos e históricos médicos.</p>
+                </div>
+                <div class="article-section">
+                    <h3>2. Impressão 3D na Saúde</h3>
+                    <p><strong>O que é?</strong> Tecnologia de fabricação que cria objetos tridimensionais a partir de modelos digitais.</p>
+                    <p><strong>Por que é revolucionário?</strong> Impressoras 3D estão sendo usadas para criar próteses personalizadas, implantes e até órgãos bioprintados. Isso permite uma adaptação perfeita às necessidades individuais dos pacientes, melhorando o conforto e a eficácia dos tratamentos.</p>
+                </div>
+                <div class="article-section">
+                    <h3>3. Telemedicina</h3>
+                    <p><strong>O que é?</strong> Prestação de serviços de saúde à distância através de tecnologias de comunicação.</p>
+                    <p><strong>Por que é revolucionário?</strong> A telemedicina tornou-se essencial, especialmente durante a pandemia de COVID-19. Ela permite que pacientes recebam consultas médicas, diagnósticos e tratamentos sem sair de casa. Isso é crucial para alcançar populações em áreas remotas e reduzir a sobrecarga nos sistemas de saúde.</p>
+                </div>
+                <div class="article-section">
+                    <h3>4. Wearables para Saúde</h3>
+                    <p><strong>O que é?</strong> Dispositivos vestíveis que monitoram dados de saúde em tempo real.</p>
+                    <p><strong>Por que é revolucionário?</strong> Smartwatches e outros wearables agora podem monitorar frequência cardíaca, níveis de oxigênio no sangue, atividade física e até detectar arritmias. Esses dados são vitais para prevenir emergências médicas e ajudar na gestão de condições crônicas.</p>
+                </div>
+                <div class="article-section">
+                    <h3>5. Realidade Virtual e Aumentada</h3>
+                    <p><strong>O que é?</strong> Tecnologias que criam ambientes virtuais (VR) ou sobrepõem informações digitais ao mundo real (AR).</p>
+                    <p><strong>Por que é revolucionário?</strong> A RV está sendo usada para treinamento de médicos, permitindo que eles pratiquem cirurgias em um ambiente seguro e controlado. A RA ajuda cirurgiões a visualizar estruturas internas do corpo durante operações, aumentando a precisão e a segurança dos procedimentos.</p>
+                </div>
+                <div class="article-section">
+                    <h3>6. Terapia Gênica e Edição de Genes</h3>
+                    <p><strong>O que é?</strong> Métodos de tratamento que alteram os genes para prevenir ou tratar doenças.</p>
+                    <p><strong>Por que é revolucionário?</strong> A terapia gênica está mostrando resultados promissores no tratamento de doenças genéticas raras e alguns tipos de câncer. A tecnologia CRISPR, por exemplo, permite a edição precisa do DNA, abrindo caminho para curar doenças hereditárias e modificar células do sistema imunológico para combater cânceres de forma mais eficaz.</p>
+                </div>
+                <div class="article-section">
+                    <h3>7. Nanotecnologia na Medicina</h3>
+                    <p><strong>O que é?</strong> Uso de materiais em escala nanométrica para diagnósticos e tratamentos médicos.</p>
+                    <p><strong>Por que é revolucionário?</strong> Nanorrobôs podem ser projetados para entregar medicamentos diretamente às células cancerosas, reduzindo efeitos colaterais e aumentando a eficácia do tratamento. Nanopartículas também estão sendo usadas para melhorar a qualidade das imagens médicas e desenvolver novas formas de terapia.</p>
+                </div>
+                <p>Continue acompanhando o <strong>Gadget Guru</strong> para se manter atualizado sobre as últimas inovações em tecnologia médica. Estamos comprometidos em trazer as novidades que podem transformar sua saúde e bem-estar. A revolução na saúde está apenas começando, e estamos aqui para guiá-lo nessa jornada.</p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
